@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="asset/css/fontawesome.css">
+    <link rel="stylesheet" href="asset/css/all.css">
+    <title>Line - Up | Créer une ligne</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrap">
+                <div class="header-item logo">
+                    Line - Up
+                </div>
+                <div class="header-item">
+                    <div class="sub"><a href="">Dashboard</a></div>
+                    <div class="sub"><a href="login.html">Creer Une ligne</a></div>
+                    <div class="sub"><a href="login.html">File disponibles</a></div>
+                    <div class="sub"><a href="login.html">Deconnexion</a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="create-line-container">
+        <div class="container">
+        <div class="page-title">
+            <h1>Créer une nouvelle ligne</h1>
+            <p>Configurez votre file d'attente en quelques étapes simples</p>
+        </div>
+
+        <form class="create-line-form">
+            <div class="form-section">
+                <h2>Informations générales</h2>
+                <div class="form-group">
+                    <label for="line-name">Nom de la ligne *</label>
+                    <input type="text" id="line-name" required placeholder="Ex: Service Client Principal">
+                </div>
+                <div class="form-group">
+                    <label for="line-description">Description</label>
+                    <textarea id="line-description" rows="3" placeholder="Décrivez le but de cette file d'attente"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="line-type">Type de service *</label>
+                    <select id="line-type" required>
+                        <option value="">Sélectionnez un type</option>
+                        <option value="customer-service">Service Client</option>
+                        <option value="healthcare">Santé</option>
+                        <option value="administration">Administration</option>
+                        <option value="other">Autre</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Paramètres de fonctionnement</h2>
+                <div class="form-group">
+                    <label>Horaires d'ouverture *</label>
+                    <div class="time-inputs">
+                        <input type="time" id="opening-time" required>
+                        <input type="time" id="closing-time" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="max-capacity">Capacité maximale</label>
+                    <input type="number" id="max-capacity" placeholder="Nombre maximum de personnes">
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="auto-close">
+                    <label for="auto-close">Fermeture automatique à capacité maximale</label>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button type="button" class="cancel-button">Annuler</button>
+                <button type="submit" class="submit-button">Créer la ligne</button>
+            </div>
+        </form>
+    </div>
+    </div>
+</body>
+</html>

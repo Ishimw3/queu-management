@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
 
 html {
     width: 100%;
     background: #ffffff;
+	font-family: 'Monserrat';
 }
 
 body {
@@ -191,8 +194,11 @@ footer {
     padding-top: 30px;
 }
 
+.dash {
+	justify-content: center;
+	text-align: center
+}
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 
 body {
@@ -393,3 +399,248 @@ form a {
 	height: 40px;
 	width: 40px;
 }
+
+/** Creer ligne **/
+
+.create-line-container {
+	padding: 2rem 0;
+}
+
+.page-title {
+	background: #1f2937;
+	color: #f9faf8;
+	padding: 2rem;
+	border-radius: 10px;
+	margin-bottom: 2rem;
+}
+
+.page-title h1 {
+	font-size: 2rem;
+	margin-bottom: 0.5rem;
+}
+
+.page-title p {
+	color: #e5e7eb;
+	font-size: 1.1rem;
+}
+
+.create-line-form {
+	background: white;
+	padding: 2rem;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+	margin-bottom: 2rem;
+}
+
+.form-section h2 {
+	color: #1f2937;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+	padding-bottom: 0.5rem;
+	border-bottom: 2px solid #e5e7eb;
+}
+
+.form-group {
+	margin-bottom: 1.5rem;
+}
+
+.form-group label {
+	display: block;
+	color: #1f2937;
+	margin-bottom: 0.5rem;
+	font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+	width: 100%;
+	padding: 0.75rem;
+	border: 2px solid #e5e7eb;
+	border-radius: 8px;
+	font-size: 1rem;
+	transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+	border-color: #3882f6;
+	outline: none;
+}
+
+.checkbox-group {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	margin-top: 1rem;
+}
+
+.checkbox-group input[type="checkbox"] {
+	width: auto;
+}
+
+.time-inputs {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+}
+
+.action-buttons {
+	display: flex;
+	gap: 1rem;
+	margin-top: 2rem;
+	justify-content: flex-end;
+}
+
+.submit-button {
+	background: #3882f6;
+	color: white;
+	border: none;
+	padding: 0.75rem 2rem;
+	border-radius: 8px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.cancel-button {
+	background: #e5e7eb;
+	color: #1f2937;
+	border: none;
+	padding: 0.75rem 2rem;
+	border-radius: 8px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+	background: #2563eb;
+}
+
+.cancel-button:hover {
+	background: #d1d5db;
+}
+
+.info-text {
+	color: #6b7280;
+	font-size: 0.9rem;
+	margin-top: 0.5rem;
+}
+
+/** dashboard **/
+
+.dashboard-container {
+	padding: 2rem 0;
+  }
+
+  .greeting {
+	background: #1f2937;
+	color: #f9faf8;
+	padding: 2rem;
+	border-radius: 10px;
+	margin-bottom: 2rem;
+  }
+
+  .greeting h1 {
+	font-size: 2.5rem;
+	margin-bottom: 0.5rem;
+  }
+
+  .greeting p {
+	color: #e5e7eb;
+  }
+
+  .search-section {
+	background: white;
+	padding: 2rem;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	margin-bottom: 2rem;
+  }
+
+  .search-box {
+	display: flex;
+	gap: 1rem;
+	margin-bottom: 2rem;
+  }
+
+  .search-input {
+	flex: 1;
+	padding: 0.75rem;
+	border: 2px solid #e5e7eb;
+	border-radius: 8px;
+	font-size: 1rem;
+  }
+
+  .search-button {
+	background: #3882f6;
+	color: white;
+	border: none;
+	padding: 0.75rem 1.5rem;
+	border-radius: 8px;
+	cursor: pointer;
+	font-weight: 500;
+  }
+
+  .quick-actions {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 1.5rem;
+	margin-bottom: 2rem;
+  }
+
+  .action-card {
+	background: white;
+	padding: 1.5rem;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	text-align: center;
+  }
+
+  .action-card i {
+	font-size: 2rem;
+	color: #3882f6;
+	margin-bottom: 1rem;
+  }
+
+  .action-card h3 {
+	color: #1f2937;
+	margin-bottom: 0.5rem;
+  }
+
+  .action-card p {
+	color: #6b7280;
+	font-size: 0.9rem;
+  }
+
+  .create-line-section {
+	background: #3882f6;
+	color: white;
+	padding: 2rem;
+	border-radius: 10px;
+	text-align: center;
+  }
+
+  .create-line-section h2 {
+	margin-bottom: 1rem;
+  }
+
+  .create-line-button {
+	background: white;
+	color: #3882f6;
+	border: none;
+	padding: 0.75rem 2rem;
+	border-radius: 8px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background-color 0.3s;
+  }
+
+  .create-line-button:hover {
+	background: #f3f4f6;
+  }
