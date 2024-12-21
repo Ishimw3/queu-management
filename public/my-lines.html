@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../asset/css/fontawesome.css">
+    <link rel="stylesheet" href="../asset/css/all.css">
+    <title>Line - Up | Mes Files d'Attente</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrap">
+                <div class="header-item logo">
+                    Line - Up
+                </div>
+                <div class="header-item">
+                    <div class="sub"><a href="">Dashboard</a></div>
+                    <div class="sub"><a href="login.html">Creer Une ligne</a></div>
+                    <div class="sub"><a href="login.html">File disponibles</a></div>
+                    <div class="sub"><a href="login.html">Deconnexion</a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <div class="container">
+        <div class="page-header">
+            <h1>Mes Files d'Attente</h1>
+            <button class="create-button">
+                <i class="fas fa-plus"></i>
+                Créer une nouvelle file
+            </button>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Files actives</h3>
+                <div class="value">4</div>
+            </div>
+            <div class="stat-card">
+                <h3>Personnes en attente (total)</h3>
+                <div class="value">27</div>
+            </div>
+            <div class="stat-card">
+                <h3>Temps d'attente moyen</h3>
+                <div class="value">15 min</div>
+            </div>
+            <div class="stat-card">
+                <h3>Personnes servies aujourd'hui</h3>
+                <div class="value">142</div>
+            </div>
+        </div>
+
+        <div class="search-filter">
+            <input type="text" placeholder="Rechercher une file...">
+            <select class="filter-select">
+                <option value="">Tous les statuts</option>
+                <option value="active">Actif</option>
+                <option value="paused">En pause</option>
+                <option value="inactive">Inactif</option>
+            </select>
+        </div>
+
+        <div class="line-management">
+            <table class="line-table">
+                <thead>
+                    <tr>
+                        <th>Nom de la file</th>
+                        <th>Statut</th>
+                        <th>En attente</th>
+                        <th>Temps estimé</th>
+                        <th>Accès</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Service Client Principal</td>
+                        <td><span class="line-status status-active">Actif</span></td>
+                        <td><span class="waiting-count">12</span> / 25</td>
+                        <td>15 min</td>
+                        <td>
+                            <div class="action-buttons">
+                                <div class="qr-code">
+                                    <i class="fas fa-qrcode"></i>
+                                </div>
+                                <a href="#" class="copy-link">
+                                    <i class="fas fa-link"></i>
+                                    Copier le lien
+                                </a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="action-buttons">
+                                <button class="action-btn edit-btn">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button class="action-btn pause-btn">
+                                    <i class="fas fa-pause"></i>
+                                </button>
+                                <button class="action-btn delete-btn">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Support Technique</td>
+                        <td><span class="line-status status-paused">En pause</span></td>
+                        <td><span class="waiting-count">5</span> / 15</td>
+                        <td>20 min</td>
+                        <td>
+                            <div class="action-buttons">
+                                <div class="qr-code">
+                                    <i class="fas fa-qrcode"></i>
+                                </div>
+                                <a href="#" class="copy-link">
+                                    <i class="fas fa-link"></i>
+                                    Copier le lien
+                                </a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="action-buttons">
+                                <button class="action-btn edit-btn">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button class="action-btn pause-btn">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <button class="action-btn delete-btn">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Consultation Médicale</td>
+                        <td><span class="line-status status-inactive">Inactif</span></td>
+                        <td><span class="waiting-count">0</span> / 30</td>
+                        <td>45 min</td>
+                        <td>
+                            <div class="action-buttons">
+                                <div class="qr-code">
+                                    <i class="fas fa-qrcode"></i>
+                                </div>
+                                <a href="#" class="copy-link">
+                                    <i class="fas fa-link"></i>
+                                    Copier le lien
+                                </a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="action-buttons">
+                                <button class="action-btn edit-btn">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button class="action-btn pause-btn">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <button class="action-btn delete-btn">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
